@@ -55,7 +55,7 @@ export class UsersController {
 
   @Post('/signout')
   signOut(@Session() session: any) {
-    session.userId = null;
+    session.userId = undefined;
   }
 
   @Post('/signup')
